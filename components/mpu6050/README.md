@@ -48,4 +48,4 @@ A biblioteca permite:
 ## **Instalação**
 1. Clone este repositório dentro da pasta `components/` do seu projeto ESP-IDF:
    ```bash
-   git clone https://github.com/alysonvale/mpu6050.git](https://github.com/alysonvale/sistemasEmbarcados.git
+   git clone [https://github.com/alysonvale/mpu6050.git](https://github.com/alysonvale/sistemasEmbarcados.git](https://github.com/alysonvale/sistemasEmbarcados.git)
