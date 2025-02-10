@@ -1,3 +1,5 @@
+#Alunos: Alyson Matheus Vale e Pedro Savio
+
 # Monitoramento de Vibração e Temperatura para Prevenção de Falhas
 
 ## Introdução  
