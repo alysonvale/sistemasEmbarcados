@@ -1,38 +1,72 @@
-#Alunos: Alyson Matheus Vale e Pedro Savio
+# Monitoramento de Temperatura para Forno Industrial
 
-# Monitoramento de Vibração e Temperatura para Prevenção de Falhas
+## Alunos:
+- Alyson Matheus Vale
+- Pedro Savio
 
-## Introdução  
+## Introdução
 
-A manutenção preditiva tem se tornado um pilar essencial na indústria moderna, permitindo a detecção antecipada de falhas em máquinas e estruturas. O projeto proposto utiliza sensores de vibração e temperatura para monitoramento em tempo real, fornecendo dados que ajudam a prevenir danos, otimizar a manutenção e reduzir custos operacionais.
+A manutenção preditiva é um elemento essencial na indústria moderna, permitindo a detecção antecipada de falhas e otimização da operação de equipamentos. Este projeto tem como objetivo monitorar a temperatura de um forno industrial em tempo real, prevenindo superaquecimentos e garantindo maior eficiência operacional.
 
-## Descrição do Sistema  
+O sistema utiliza sensores para capturar a temperatura do forno e um display OLED para exibir os valores coletados. Além disso, um LED de alerta é ativado sempre que a temperatura ultrapassa um limite predefinido, sendo desativado quando a temperatura retorna a níveis seguros.
 
-O sistema é composto por três principais componentes:
+## Descrição do Sistema
 
-- **MPU6050**: Sensor de aceleração e giroscópio que detecta variações bruscas e padrões anômalos de vibração.  
-- **DS18B20**: Sensor de temperatura digital de alta precisão, utilizado para monitorar o aquecimento anormal de equipamentos. O superaquecimento pode indicar problemas como atrito excessivo, falhas na lubrificação ou sobrecarga, sendo um fator crítico para evitar danos severos.  
-- **SSD1306**: Display OLED para exibir os valores coletados e alertas em tempo real.  
-- **LED de Alerta**: Dispositivo luminoso que acende caso a vibração ou temperatura ultrapassem limites predefinidos.  
+O projeto é composto pelos seguintes componentes principais:
 
-A integração desses componentes permite uma resposta imediata a condições críticas, aumentando a segurança operacional e prevenindo falhas catastróficas.
+- **DS18B20**: Sensor de temperatura digital de alta precisão, responsável por medir a temperatura do forno.
+- **SSD1306**: Display OLED para exibição da temperatura em tempo real.
+- **LED de Alerta**: Dispositivo luminoso que acende caso a temperatura ultrapasse o limite predefinido e apaga quando retorna ao normal.
+- **SSR**: Um relé de estado sólido (SSR) é utilizado através de uma GPIO conectada ao LED, permitindo o acionamento do alerta.
 
-## Aplicações e Benefícios  
+A integração desses componentes possibilita um monitoramento contínuo e uma resposta imediata caso a temperatura atinja valores críticos.
 
-Este projeto tem diversas aplicações, incluindo:
+## Aplicações e Benefícios
 
-- **Indústria**: Monitoramento de motores, bombas e máquinas industriais para evitar falhas inesperadas causadas tanto por vibrações anormais quanto por aquecimento excessivo.  
-- **Setor Automotivo**: Análise de vibração e temperatura em veículos para diagnóstico de problemas mecânicos, como superaquecimento do motor ou falhas nos freios.  
-- **Engenharia Estrutural**: Avaliação de vibração e temperatura em pontes, prédios e outras infraestruturas para detectar instabilidades e evitar colapsos estruturais.  
+Este projeto tem diversas aplicações industriais, incluindo:
 
-Os benefícios incluem:
+- **Forno Industrial**: Monitoramento da temperatura para evitar superaquecimentos e garantir a eficiência do processo produtivo.
+- **Setor Automotivo**: Controle térmico em processos de fundição e tratamento térmico de peças.
+- **Indústria Alimentícia**: Monitoramento de temperatura em fornos de panificação e outros equipamentos térmicos.
 
-- **Redução de Custos**: Evita manutenção corretiva, que é mais cara e demanda tempo.  
-- **Aumento da Segurança**: Previne falhas que podem causar acidentes.  
-- **Maior Vida Útil dos Equipamentos**: A manutenção preventiva baseada em dados reduz o desgaste prematuro e evita falhas críticas por superaquecimento.  
+Os principais benefícios do projeto incluem:
 
-## Conclusão  
+- **Redução de Riscos**: Evita danos causados por superaquecimento em equipamentos industriais.
+- **Maior Eficiência Energética**: Permite um controle mais preciso do uso de energia no forno.
+- **Aumento da Segurança**: Monitoramento contínuo reduz o risco de falhas catastróficas.
 
-O monitoramento contínuo de vibração e temperatura é fundamental para melhorar a eficiência operacional e evitar prejuízos. A detecção precoce de variações anormais de temperatura pode evitar danos graves em equipamentos e infraestruturas.  
+## Implementação
 
-Combinando sensores acessíveis e tecnologia embarcada, o projeto oferece uma solução eficaz para diversos setores. Sua implementação demonstra a importância da inovação na manutenção preditiva, tornando-se um diferencial competitivo e um avanço na preservação de equipamentos e infraestruturas.
+O projeto foi desenvolvido utilizando um microcontrolador ESP com conexão Wi-Fi, permitindo futuras expansões para monitoramento remoto e alertas via rede. A medição da temperatura ocorre periodicamente, e o LED de alerta é acionado sempre que os valores ultrapassam um limite predefinido.
+
+### Fluxo de Funcionamento
+
+1. O **sensor DS18B20** lê a temperatura do forno.
+2. O **display SSD1306** exibe o valor da temperatura em tempo real.
+3. Se a temperatura ultrapassar o limite, o **LED de alerta** acende.
+4. Quando a temperatura retorna ao nível seguro, o **LED de alerta** apaga.
+
+### Configuração de Alerta
+
+- Temperatura máxima permitida: **Definida pelo usuário**
+- LED acende quando: **Temperatura > limite predefinido**
+- LED apaga quando: **Temperatura ≤ limite predefinido**
+
+## Link para Vídeo e Imagens
+
+Para facilitar a visualização do funcionamento do sistema, disponibilizamos os seguintes links:
+
+📹 **Vídeo Demonstrativo**: [https://youtube.com/shorts/Vq9VWbWFRvo]
+
+🖼️ **Imagens do Projeto**: [Inserir link aqui]
+
+## Conclusão
+
+O monitoramento contínuo da temperatura do forno industrial é essencial para evitar falhas, reduzir desperdícios energéticos e aumentar a segurança. O projeto propõe uma solução acessível e eficiente, utilizando sensores de temperatura e um sistema de alerta visual.
+
+Futuramente, o sistema pode ser expandido com integração de conectividade remota, permitindo que alertas sejam enviados para dispositivos móveis e sistemas de controle automatizado.
+
+---
+
+**Autores:**  
+Alyson Matheus Vale | Pedro Savio  
