@@ -58,7 +58,7 @@ Para facilitar a visualização do funcionamento do sistema, disponibilizamos os
 
 📹 **Vídeo Demonstrativo**: [https://youtube.com/shorts/Vq9VWbWFRvo]
 
-🖼️ **Imagens do Projeto**: [Inserir link aqui]
+🖼️ **Imagens do Projeto**: [https://github.com/alysonvale/sistemasEmbarcados/blob/main/projeto.jpeg]
 
 ## Conclusão
 
