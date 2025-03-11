@@ -60,6 +60,8 @@ Para facilitar a visualização do funcionamento do sistema, disponibilizamos os
 
 🖼️ **Imagens do Projeto**: [https://github.com/alysonvale/sistemasEmbarcados/blob/main/projeto.jpeg]
 
+**Diagrama de Bloco**: [https://github.com/alysonvale/sistemasEmbarcados/blob/main/Diagrama%20de%20bloco.drawio.drawio.png]
+
 ## Conclusão
 
 O monitoramento contínuo da temperatura do forno industrial é essencial para evitar falhas, reduzir desperdícios energéticos e aumentar a segurança. O projeto propõe uma solução acessível e eficiente, utilizando sensores de temperatura e um sistema de alerta visual.
